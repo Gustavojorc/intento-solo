@@ -3,19 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto</title>
+    <title>Gustavo Jordin</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body >
     <header>
-        <h1>Bienvenido a Mi Proyecto</h1>
+        <h1>Refaccionaria Duran</h1>
     </header>
-    <main>
-        <p>Este es el contenido principal de la página.</p>
-    </main>
+        <div class="tab-container">
+            <button class="tab-button" onclick="openTab ('home')">Home</button>
+            <button class="tab-button" onclick="openTab('about')">About </button>
+            <button class="tab-button" onclick="openTab('contact')">Contact </button>
+        </div>
+
+        <div id="home" class="tab-content">
+            <h2>Home</h2>
+            <p>Contenido de la pestaña Home.</p>
+        </div>
+
+        <div id="about" class="tab-content">
+            <h2>About</h2>
+            <p>Contenido de la pestaña About</p>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contact</h2>
+            <p>contenido de la pestaña Contact.</p>
+        </div>
+        <script src="script.js"></script>
     <footer>
-        <p>&copy; 2024 Mi Proyecto</p>
+        <p>&copy; 2024 Mi Proyecto de residencia primera version 1.0</p>
     </footer>
-    <script src="script.js"></script>
+
 </body>
 </html>
