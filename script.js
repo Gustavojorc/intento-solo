@@ -1,4 +1,4 @@
-function opentab(tabId) {
+function openTab(tabId) {
 
     var contents = document.getElementsByClassName('tab-content');
     for (var i = 0; i < contents.length; i++) {
@@ -8,5 +8,5 @@ function opentab(tabId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    opentab('home');
+    openTab('home');
 });
