@@ -1,12 +1,20 @@
-function openTab(tabId) {
+function abrirPestaña(nombrePestaña) {
 
-    var contents = document.getElementsByClassName('tab-content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
+    var contenidos = document.getElementsByClassName('contenido-pestaña');
+    for (var i = 0; i < contenidos.length; i++) {
+        contenidos[i].style.display = 'none';
     }
-    document.getElementById(tabId).style.display = 'block'; 
+    document.getElementById(nombrePestaña).style.display = 'block'; 
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    openTab('home');
+    openTab('Inicio');
 });
+function mostrarProductos() {
+    var productos = document.getElementById("productos");
+    if (productos.style.display === "none") {
+        productos.style.display = "block";
+    } else {
+        productos.style.display = "none";
+    }
+}

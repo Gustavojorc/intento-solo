@@ -10,27 +10,34 @@
     <header>
         <h1>Refaccionaria Duran</h1>
     </header>
-        <div class="tab-container">
-            <button class="tab-button" onclick="openTab ('home')">Home</button>
-            <button class="tab-button" onclick="openTab('about')">About </button>
-            <button class="tab-button" onclick="openTab('contact')">Contact </button>
+        <div class="contenedor-pestanas">
+            <button class="boton-pestana" onclick="abrirPestaña ('inicio')">Inicio</button>
+            <button class="boton-pestana" onclick="abrirPestaña('acerca')">Acerca de </button>
+            <button class="boton-pestana" onclick="abrirPestaña('contacto')">Contacto </button>
+            <button class="cta-button" onclick="mostrarProductos()">Explorar Productos</button>
+        </div>
+        <div id="productos" style="display: none;">
+            <h2>Nuestros Productos</h2>
+            <ul>
+                <li>Producto 1: Descripcion y precio</li>
+                <li>Producto 2: Descripcion y precio</li>
+            </ul>
         </div>
 
-        <div id="home" class="tab-content">
+        <div id="inicio" class="contenido-pestaña">
             <h1>Bienvenido a la refaccionaria Duran</h1>
-            <p>En nuestra refaccionaria encontraras una amplia gama de repuestos diesel para satisfacer tus necesidades </p>
+            <p>Somos tu solución confiable en refacciones para vehículos diésel. Explora nuestra amplia gama de productos de alta calidad.</p>
             <img src="" alt="Imagen de la refaccionaria" class="home-img">
-            <button class="cta-button">Explorar Productos</button>
+            
+        </div>
+        <div id="acerca" class="contenido-pestaña">
+            <h2>Acerca de</h2>
+            <p>En Refaccionaria Duran, llevamos más de 20 años brindando las mejores soluciones en refacciones diésel. Confiabilidad, experiencia y calidad nos definen.</p>
         </div>
 
-        <div id="about" class="tab-content">
-            <h2>About</h2>
-            <p>Contenido de la pestaña About</p>
-        </div>
-
-        <div id="contact" class="tab-content">
-            <h2>Contact</h2>
-            <p>contenido de la pestaña Contact.</p>
+        <div id="contacto" class="contenido-pestaña">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes dudas o necesitas una cotización? Escríbenos a <a href="mailto:contacto@refaccionariaduran.com">contacto@refaccionariaduran.com</a> o llama al (999) 123-4567.</p>
         </div>
         <script src="script.js"></script>
     <footer>
